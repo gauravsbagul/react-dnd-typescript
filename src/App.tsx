@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
 import './App.css';
+import { Container } from './components/Example';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<DndProvider backend={HTML5Backend}>
+			<Container />
+		</DndProvider>
+	);
+};
 
 export default App;
+
+//https://github.com/reduxjs/redux-devtools/tree/main/extension#installation
