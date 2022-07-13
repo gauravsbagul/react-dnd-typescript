@@ -15,7 +15,6 @@
 		"@testing-library/user-event": "^13.5.0",
 		"@types/jest": "^27.5.2",
 		"@types/node": "^16.11.43",
-		"@types/react": "^18.0.15",
 		"@types/react-dom": "^18.0.6",
 		"axios": "^0.27.2",
 		"faker": "^6.6.6",
@@ -72,6 +71,7 @@
 		}
 	},
 	"devDependencies": {
-		"@types/lodash": "^4.14.182"
+		"@types/lodash": "^4.14.182",
+		"@types/react": "^18.0.15"
 	}
 }
