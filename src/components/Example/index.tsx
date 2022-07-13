@@ -41,7 +41,6 @@ export const Container: FC = memo(function Container() {
 		},
 		{ accepts: [ItemTypes.PAPER], lastDroppedItem: null },
 	]);
-	console.log('Log: ~> file: index.tsx ~> line 44 ~> Container ~> dustbins', dustbins);
 
 	const [boxes] = useState<BoxState[]>([
 		{ name: 'Bottle', type: ItemTypes.GLASS },
